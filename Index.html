@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celulares - La Mejor Tecnología</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0056b3;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        nav a:hover {
+            background-color: #004494;
+        }
+        .hero {
+            background-image: url('hero-celulares.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px #000;
+        }
+        .hero h1 {
+            font-size: 3rem;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .card h3 {
+            margin: 10px 0;
+        }
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Celulares - La Mejor Tecnología</h1>
+    </header>
+    <nav>
+        <a href="novedades.html">Novedades</a>
+        <a href="marcas.html">Marcas</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+    <div class="hero">
+        <h1>Encuentra tu Smartphone Ideal</h1>
+    </div>
+    <div class="container">
+        <section id="novedades">
+            <h2>Novedades</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="smartphone1.jpg" alt="Celular 1">
+                    <h3>Galaxy Z Fold 5</h3>
+                    <p>El futuro de los teléfonos plegables.</p>
+                </div>
+                <div class="card">
+                    <img src="smartphone2.jpg" alt="Celular 2">
+                    <h3>iPhone 15 Pro Max</h3>
+                    <p>Potencia y diseño en tus manos.</p>
+                </div>
+                <div class="card">
+                    <img src="smartphone3.jpg" alt="Celular 3">
+                    <h3>Xiaomi 13 Ultra</h3>
+                    <p>Cámara de nivel profesional.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Celulares - La Mejor Tecnología. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

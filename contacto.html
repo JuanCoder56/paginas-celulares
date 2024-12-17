@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Celulares</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            padding: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #1a1a1a;
+        }
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #333;
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        textarea {
+            resize: vertical;
+            height: 150px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contacto</h1>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="novedades.html">Novedades</a>
+        <a href="marcas.html">Marcas</a>
+    </nav>
+    <div class="container">
+        <h2>Contáctanos</h2>
+        <form action="https://formspree.io/f/your-email" method="POST">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre completo" required>
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="_replyto" placeholder="Tu correo electrónico" required>
+            
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 Celulares. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
